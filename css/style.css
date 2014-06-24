@@ -157,7 +157,7 @@ button::-moz-focus-inner {
 .wrapper {
 	position:relative;
 	z-index:10;
-	min-height:100%;
+	padding:82px 0 0;
 	margin:0 auto;
 }
 .index {
@@ -173,7 +173,10 @@ button::-moz-focus-inner {
 /* Header */
 
 .header {
-	position:relative;
+	position:fixed;
+	left:0;
+	top:0;
+	width:100%;
 	z-index:10;
 	margin:0 0 -12px;
 	background:url('../img/header_bg.png') repeat-x top;
@@ -282,11 +285,13 @@ button::-moz-focus-inner {
 	margin:140px auto 30px;
 }
 .content .lb {
-	display:inline-block;
+	position:fixed;
+	top:224px;
+	left:50%;
 	width:291px;
 	vertical-align:top;
 	padding:0 0 13px;
-	margin:2px 51px 0 -25px;
+	margin:2px 51px 0 -505px;
 	background:url('../img/content_lb.png') repeat;
 }
 .content .lb .nav {
@@ -351,7 +356,7 @@ button::-moz-focus-inner {
 	display:inline-block;
 	width:640px;
 	vertical-align:top;
-	margin:0 -3px 0 0;
+	margin:0 -3px 0 320px;
 }
 .breadcrumbs {
 	clear:both;
