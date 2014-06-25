@@ -35,13 +35,18 @@ function map() {
 	var h = $('.wrapper').height();
 	var path = $('.map script').attr('src')+h;
 }
+function wrapper() {
+	$('.wrapper').css({'min-height': $(window).height()-140+'px'})
+}
 $(window).resize(function() {
 	map();
+	wrapper();
 });
 $(document).ready(function() {
 	map();
 });
 $(document).ready(function() {
+	wrapper();
 	$('.list li a').each(function() {
 		var ph = $(this).find('p').height();
 		if ( ph == 24 ) {
