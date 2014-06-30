@@ -38,15 +38,23 @@ function map() {
 function wrapper() {
 	$('.wrapper').css({'min-height': $(window).height()-140+'px'})
 }
+function copyright() {
+	if ( $('.content .lb').length > 0 && $(window).height() < 748 ) {
+		$('p.copy').hide();
+	}
+	else {
+		$('p.copy').show();
+	}
+}
 $(window).resize(function() {
 	map();
 	wrapper();
-});
-$(document).ready(function() {
-	map();
+	copyright();
 });
 $(document).ready(function() {
 	wrapper();
+	map();
+	copyright();
 	$('.list li a').each(function() {
 		var ph = $(this).find('p').height();
 		if ( ph == 24 ) {
