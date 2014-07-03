@@ -904,7 +904,7 @@ button::-moz-focus-inner {
 	padding:11px !important;
 	vertical-align:top;
 	padding:0 0 13px;
-	margin:2px 56px 0 -25px;
+	margin:2px -247px 0 -25px;
 	background:url('../img/contacts_bg.png') repeat;
 }
 .content .contacts > div {
