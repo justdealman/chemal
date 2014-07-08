@@ -1122,3 +1122,33 @@ button::-moz-focus-inner {
 	vertical-align:top;
 	margin:-1px 0 0;
 }
+
+.pluso {
+	margin:24px 10px 3px 17px;
+}
+.pluso-wrap {
+	background:none !important;
+}
+.pluso-wrap a {
+	float:left !important;
+	width:40px !important;
+ 	height:42px !important;
+	margin:0 0 7px 7px !important;
+	background:none !important;
+	border:2px solid #ffffff !important;
+}
+.pluso-wrap .pluso-vkontakte {
+ 	background:url('../img/vkontakte_icon.png') no-repeat center center !important;
+}
+.pluso-wrap .pluso-facebook {
+	background:url('../img/facebook_icon.png') no-repeat center center !important;
+}
+.pluso-wrap .pluso-twitter {
+	background:url('../img/twitter_icon.png') no-repeat center center !important;
+}
+.pluso-wrap .pluso-odnoklassniki {
+	background:url('../img/odnoklassniki_icon.png') no-repeat center center !important;
+}
+.pluso-more, .pluso-counter {
+	display:none !important;
+}

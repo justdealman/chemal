@@ -7,14 +7,14 @@
 		var ih = $(this).find('img').attr('height');
 		var ir = iw/ih;
 		if ( ar > ir ) {
-			var nw = aw*1.2;
+			var nw = aw*1.3;
 			var nh = nw/ir;
 			var il = -$('body').width()*0.1;
 			var it = -(nh-ah)/2;
 		}
 		else {
-			var nh = ah*1.2;
-			var nw = ah*ir*1.2;
+			var nh = ah*1.3;
+			var nw = ah*ir*1.3;
 			var il = -((nw-aw)/2)+eval($('body').width()*0.1);
 			var it = 0;
 		}
@@ -25,8 +25,8 @@
 			'height': nh+'px'
 		});
 		$('.layer1').css({'margin-top': -(nh-ah)/10+'px'});
-		$('.layer2').css({'margin-top': -(nh-ah)/2.5+'px'});
-		$('.layer3').css({'margin-top': -(nh-ah)/1.5+'px'});
+		$('.layer2').css({'margin-top': -(nh-ah)/2.8+'px'});
+		$('.layer3').css({'margin-top': -(nh-ah)/1.4+'px'});
 	});
 	$('.scene li .level1').css({'top': '82px'});
 	$('.scene li .level3').css({'top': '-82px'});
