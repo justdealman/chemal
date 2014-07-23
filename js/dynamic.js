@@ -52,6 +52,12 @@ $(window).resize(function() {
 	copyright();
 });
 $(document).ready(function() {
+	if ( /Opera Mini/i.test(navigator.userAgent) && $('.index').length > 0 ) {
+		$('.scene').hide();
+		$('.bg').css({
+			'background': 'url("./img/bg0.jpg") no-repeat center center'
+		});
+	}
 	wrapper();
 	map();
 	copyright();
