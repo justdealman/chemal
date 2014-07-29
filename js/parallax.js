@@ -145,12 +145,6 @@
           var body = document.body || document.createElement('body');
           var documentElement = document.documentElement;
           var documentOverflow = documentElement.style.overflow;
-          if (!document.body) {
-            documentElement.style.overflow = 'hidden';
-            documentElement.appendChild(body);
-            body.style.overflow = 'hidden';
-            body.style.background = '';
-          }
           body.appendChild(element);
           element.style[jsProperty] = 'translate3d(1px,1px,1px)';
           propertyValue = window.getComputedStyle(element).getPropertyValue(cssProperty);

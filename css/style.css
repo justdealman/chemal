@@ -338,6 +338,8 @@ button::-moz-focus-inner {
 	display:block;
 }
 .content .lb .social {
+	position:relative;
+	z-index:10;
 	clear:both;
 	overflow:hidden;
 	margin:54px 10px 3px 17px;
@@ -367,6 +369,8 @@ button::-moz-focus-inner {
 	margin:auto;
 }
 .content .rb {
+	position:relative;
+	z-index:10;
 	display:inline-block;
 	width:640px;
 	vertical-align:top;
@@ -408,7 +412,7 @@ button::-moz-focus-inner {
 	display:inline-block;
 	width:310px;
 	vertical-align:top;
-	margin:0 20px 20px 0;
+	margin:0 18px 20px 0;
 }
 .rb .list li:nth-child(2n) {
 	margin-right:-3px;
