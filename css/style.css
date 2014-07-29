@@ -177,7 +177,7 @@ button::-moz-focus-inner {
 	left:0;
 	top:0;
 	width:100%;
-	z-index:10;
+	z-index:20;
 	margin:0 0 -12px;
 	background:url('../img/header_bg.png') repeat-x top;
 }
@@ -262,6 +262,7 @@ button::-moz-focus-inner {
 	font-weight:300;
 }
 .content {
+	position:relative;
 	width:960px;
 	margin:140px auto 30px;
 }
