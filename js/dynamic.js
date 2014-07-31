@@ -36,20 +36,11 @@ function map() {
 	var path = $('.map script').attr('src')+h;
 }
 function wrapper() {
-	$('.wrapper').css({'min-height': $(window).height()-140+'px'})
-}
-function copyright() {
-	if ( $('.content .lb').length > 0 && $(window).height() < 748 ) {
-		$('p.copy').hide();
-	}
-	else {
-		$('p.copy').show();
-	}
+	$('.wrapper').css({'min-height': $(window).height()-82+'px'});
 }
 $(window).resize(function() {
 	map();
 	wrapper();
-	copyright();
 });
 $(document).ready(function() {
 	if ( /Opera Mini/i.test(navigator.userAgent) && $('.index').length > 0 ) {
@@ -60,7 +51,6 @@ $(document).ready(function() {
 	}
 	wrapper();
 	map();
-	copyright();
 	$('.list li a').each(function() {
 		var ph = $(this).find('p').height();
 		if ( ph == 24 ) {

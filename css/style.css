@@ -157,8 +157,13 @@ button::-moz-focus-inner {
 .wrapper {
 	position:relative;
 	z-index:10;
-	padding:82px 0 58px;
+	padding:82px 0 0;
 	margin:0 auto;
+}
+.clear {
+	clear:both;
+	overflow:hidden;
+	height:58px;
 }
 .index {
 	position:fixed;
@@ -228,6 +233,7 @@ button::-moz-focus-inner {
 	position:absolute;
 	left:310px;
 	margin:0;
+	z-index:20;
 }
 .header .menu li {
 	float:left;
@@ -267,13 +273,11 @@ button::-moz-focus-inner {
 	margin:140px auto 30px;
 }
 .content .lb {
-	position:fixed;
-	top:224px;
-	left:50%;
+	display:inline-block;
 	width:291px;
 	vertical-align:top;
 	padding:20px 0 13px;
-	margin:2px 51px 0 -505px;
+	margin:4px 51px 0 -25px;
 	background:url('../img/content_lb.png') repeat;
 }
 .content .lb .search {
@@ -375,7 +379,7 @@ button::-moz-focus-inner {
 	display:inline-block;
 	width:640px;
 	vertical-align:top;
-	margin:0 -3px 0 320px;
+	margin:0 -3px 0 0;
 }
 .breadcrumbs {
 	clear:both;
@@ -1114,13 +1118,13 @@ button::-moz-focus-inner {
 }
 
 .copy {
-	position:absolute;
-	left:50%;
-	bottom:16px;
+	position:relative;
+	z-index:20;
+	width:960px;
 	color:#ffffff;
 	font-size:14px;
 	line-height:18px;
-	margin-left:-480px;
+	margin:-53px auto 0;
 }
 .copy img {
 	display:inline-block;
